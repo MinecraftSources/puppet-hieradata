@@ -5,3 +5,4 @@ dns::nameservers:
   - 8.8.8.8
   - 8.8.4.4
 dns::search: 'rmbint.net'
+defaults::private_network: '172.16.0.0/24'
