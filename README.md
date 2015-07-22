@@ -17,7 +17,7 @@ Create hiera.yaml in /etc/puppet
 :backends:
   - yaml
 :yaml:
-  :datadir: /etc/puppet/environments/production/hieradata
+  :datadir:" /etc/puppet/environments/%{::environment}/hieradata"
 :hierarchy:
   - "%{::clientcert}"
   - common
