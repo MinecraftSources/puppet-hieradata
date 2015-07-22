@@ -2,4 +2,4 @@ classes:
   - profile::nfs_server
 profile::nfs_server::exports:
   '/exports/minestack':
-    clients: '172.16.0.0/24(r)'
+    clients: '172.16.0.0/24(ro)'
