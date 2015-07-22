@@ -1,5 +1,8 @@
 # puppet-hieradata
+
 Puppet hieradata for Minestack
+
+This is just an example configuration. This repo should be forked and modified to match your network configuration
 
 ## How to use
 
