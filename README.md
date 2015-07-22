@@ -19,7 +19,7 @@ Create hiera.yaml in /etc/puppet
 :yaml:
   :datadir:" /etc/puppet/environments/%{::environment}/hieradata"
 :hierarchy:
-  - "%{::clientcert}"
+  - "hosts/%{::clientcert}"
   - common
 ```
 
