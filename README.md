@@ -7,7 +7,6 @@ Puppet hieradata for Minestack
 ---
 :backends:
   - yaml
-  - json
 :yaml:
   :datadir: /etc/puppet/environments/production/hieradata
 :hierarchy:
