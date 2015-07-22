@@ -33,5 +33,5 @@ librarian-puppet update
 Run Puppet
 
 ```sh
-puppet agent -t
+puppet apply /etc/puppet/manifests/site.pp
 ```
