@@ -10,35 +10,22 @@ rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
 yum install puppet
 ```
 
-Create hiera.yaml in /etc/puppet
-
-```yaml
----
-:backends:
-  - yaml
-:yaml:
-  :datadir:" /etc/puppet/environments/%{::environment}/hieradata"
-:hierarchy:
-  - "hosts/%{::clientcert}"
-  - common
-```
-
-Create environments
+Remove default puppet configurations
 
 ```sh
-mkdir /etc/puppet/environments
+rm -rf /etc/puppet
 ```
 
 Git Clone
 
 ```sh
-git clone https://github.com/Minestack/puppet-hieradata.git /etc/puppet/environments/production
+git clone https://github.com/Minestack/puppet-hieradata.git /etc/puppet/
 ```
 
 Run librarian Puppet
 
 ```sh
-cd /etc/puppet/environments/production
+cd /etc/puppet
 librarian-puppet install
 librarian-puppet update
 ```
