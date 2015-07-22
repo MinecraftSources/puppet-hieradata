@@ -1,7 +1,7 @@
 ---
 classes:
-  - resolver
-dns_servers:
+  - profile::base
+dns::nameservers:
   - 8.8.8.8
   - 8.8.4.4
-search: 'rmbint.net'
+dns::search: 'rmbint.net'
