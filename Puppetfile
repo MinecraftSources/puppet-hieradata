@@ -2,7 +2,7 @@ forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs-stdlib', "4.6.0"
 mod 'example42-resolver', "2.0.12"
-mod 'haraldsk-nfs', "1.1.1"
+mod 'echocat-nfs', "1.5.0"
 
 mod 'minestack-profile',
   :git => 'https://github.com/Minestack/puppet-profile.git'
