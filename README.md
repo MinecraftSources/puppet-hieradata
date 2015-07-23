@@ -11,6 +11,7 @@ Install Puppet
 ```sh
 rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
 yum install puppet
+gem install librarian-puppet
 ```
 
 Remove default puppet configurations
@@ -38,3 +39,5 @@ Run Puppet
 ```sh
 puppet apply /etc/puppet/manifests/site.pp
 ```
+
+Puppet will now run automatically every 30 minutes to ensure everything is configured correctly.
